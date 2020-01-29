@@ -1,0 +1,8 @@
+<%=[:notice]%>
+<div>
+  <h4>Import Data</h4>
+  <%=form_tag import_climbs_path, multipart: true do %>
+    <%=file_field_tag :file%>
+    <%=submit_tag "Import from File"%>
+  <%end%>
+</div>
